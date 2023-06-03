@@ -4,10 +4,11 @@ import { routes } from "./routes"
 
 import {
   FormikAbstraction,
+  FormikAbstractionZod,
   FormikBasicPage,
   FormikComponents,
   FormikYupPage,
-  RegisterPage
+  RegisterPage,
 } from '../03-forms/pages';
 
 import logo from "../logo.svg"
@@ -33,7 +34,10 @@ export const Navigation = () => {
                 <NavLink to="/formik-components">Formik Components</NavLink>
               </li>
               <li>
-                <NavLink to="/formik-Abstraction">Formik Abstraction</NavLink>
+                <NavLink to="/formik-abstraction">Formik Abstraction</NavLink>
+              </li>
+              <li>
+                <NavLink to="/formik-abstraction-zod">Formik Abstraction Zod</NavLink>
               </li>
               {routes.map(({to, name}) => (
                 <li key={to}>
@@ -73,6 +77,11 @@ export const Navigation = () => {
             <Route
               path="/formik-abstraction"
               element={<FormikAbstraction />}
+            />
+
+            <Route
+              path="/formik-abstraction-zod"
+              element={<FormikAbstractionZod />}
             />
 
             {routes.map(({ path, Component }) => (

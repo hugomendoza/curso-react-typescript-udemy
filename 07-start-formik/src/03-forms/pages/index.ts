@@ -1,4 +1,5 @@
 export { FormikAbstraction } from "./FormikAbstraction";
+export { FormikAbstractionZod } from "./FormikAbstractionZod";
 export { FormikBasicPage } from "./FormikBasicPage";
 export { FormikComponents } from "./FormikComponents";
 export { FormikYupPage } from "./FormikYupPage";
